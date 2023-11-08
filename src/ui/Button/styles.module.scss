@@ -1,0 +1,80 @@
+.button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  border-radius: 5px;
+
+  &[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.primary {
+  background: var(--accent-color);
+  color: var(--btn-color);
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--accent-color-hover);
+  }
+}
+.outline {
+  border: 1px solid var(--accent-color);
+  color: var(--btn-color-outline);
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--accent-color);
+    color: var(--btn-color);
+  }
+}
+
+.outlineInverted {
+  border: 1px solid var(--accent-color);
+  color: var(--btn-color-outline-inverted);
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+  }
+}
+
+.green {
+  background: var(--green-color);
+  color: var(--white-color);
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--green-color);
+
+  &:hover {
+    background: var(--green-color-hover);
+  }
+}
+
+.red {
+  background: var(--red-color);
+  color: var(--white-color);
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--red-color);
+
+  &:hover {
+    background: var(--red-color-hover);
+  }
+}
+
+.s {
+  padding: 5px 10px;
+}
+
+.m {
+  padding: 8px 15px;
+}
+.l {
+  padding: 12px 24px;
+}

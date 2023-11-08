@@ -1,0 +1,29 @@
+.appLayout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.header {
+  grid-column: 1/-1;
+}
+
+.main {
+  background: var(--bg-color-secondary);
+  color: var(--primary-color);
+  box-shadow: var(--shadow);
+  padding: 30px 50px;
+  overflow: auto;
+
+  @media (max-width: 1200px) {
+    padding: 20px;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100%;
+}

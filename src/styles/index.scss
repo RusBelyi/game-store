@@ -1,0 +1,10 @@
+@import 'reset';
+@import 'vars/global';
+@import 'vars/darkTheme';
+@import 'vars/lightTheme';
+
+body {
+  font: var(--font-m);
+  background: var(--bg-color);
+  color: var(--primary-color);
+}

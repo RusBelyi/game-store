@@ -1,0 +1,42 @@
+.mainNav {
+}
+
+.navItem {
+  font: var(--font-l);
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  a {
+    border-radius: 30px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    span {
+      display: none;
+    }
+  }
+
+  :global(.active) {
+    color: var(--primary-color-inverted);
+    background: var(--bg-color-inverted);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,43 @@
+.wrap {
+  position: relative;
+  width: 200px;
+  text-align: right;
+}
+
+.search {
+  height: 100%;
+  width: 19%;
+  background: var(--bg-color);
+  border: 1px solid var(--secondary-color-inverted);
+  padding: 8px 0px 8px 15px;
+  border-radius: 50px;
+  color: var(--primary-color);
+  font: inherit;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  color: var(--bg-color);
+
+  &.open {
+    width: 100%;
+    padding-right: 33px;
+    pointer-events: all;
+    color: var(--primary-color);
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+
+  color: var(--bg-color-inverted);
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

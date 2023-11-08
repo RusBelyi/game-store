@@ -1,0 +1,19 @@
+body[data-theme='light'] {
+  --bg-color: #f4f4f8;
+  --bg-color-inverted: #2a2a2a;
+  --bg-color-secondary: #dad6d6;
+  --bg-color-secondary-inverted: #111111;
+
+  --primary-color: #0f0f0f;
+  --primary-color-inverted: #f3efef;
+  --secondary-color: #5e5c5c;
+  --secondary-color-inverted: #bdb6b6;
+
+  --accent-color: #e25b1c;
+  --accent-color-hover: #f36827;
+  --btn-color: var(--primary-color-inverted);
+  --btn-color-outline: var(--accent-color);
+  --btn-color-outline-inverted: var(--accent-color);
+
+  --theme-switcher-color: #db6414;
+}

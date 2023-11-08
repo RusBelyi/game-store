@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+
+  svg {
+    // width: 30px;
+    // height: 30px;
+
+    &.fill {
+      color: var(--accent-color);
+    }
+  }
+}

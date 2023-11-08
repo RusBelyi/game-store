@@ -1,0 +1,20 @@
+.header {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userAvatar {
+  margin-right: 30px;
+
+  @media (max-width: 576px) {
+    margin-right: 0;
+  }
+}

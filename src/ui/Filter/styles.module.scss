@@ -1,0 +1,32 @@
+.filter {
+  padding: 5px 10px;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color-inverted);
+}
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 5px;
+  background: transparent;
+  color: var(--primary-color);
+  font: var(--font-m);
+  border-radius: 5px;
+
+  &[disabled] {
+    cursor: default;
+  }
+
+  &.active {
+    background: var(--accent-color);
+    color: var(--white-color);
+  }
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

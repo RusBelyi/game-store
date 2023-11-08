@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  font: inherit;
+  color: var(--primary-color);
+  background: transparent;
+  font-weight: 500;
+}
+
+.next {
+  background: var(--bg-color-inverted);
+  color: var(--primary-color-inverted);
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  &.disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.numberPage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  &:hover {
+    background: var(--bg-color-inverted);
+    color: var(--primary-color-inverted);
+  }
+
+  &.active {
+    background: var(--bg-color-inverted);
+    color: var(--primary-color-inverted);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,11 @@
+.error {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+
+  button {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+.error {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  color: var(--red-color);
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0;
+  font: var(--font-m);
+  background: #fff;
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &::placeholder {
+    font: var(--font-m);
+  }
+}
